@@ -1,20 +1,11 @@
-size = int(input())
-for i in range(1,size+1):
-    for j in range(1,size+1):
-        if j == i or i+j == size+1:
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print()
 
-    """
+while True:
+    n = int(input())
+    print(f"the multipiclation table for {n} is : ")
 
-0,0                 0,4
-     1,1       1,3     
-          2,2          
-     3,1       3,3     
-4,0                 4,4
-
-
-
-    """
+    for i in range(1,11):
+        print(f"{n} x {i} = {n*i}")
+    print("Enter 1 to run again : ",end="")
+    l = int(input())
+    if l != 1:
+        break
